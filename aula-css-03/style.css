@@ -1,0 +1,74 @@
+
+ 
+  .proz_description_services_one, .proz_description_services_two {
+    background: url(./img/bg_laranja.jpg);
+    border-radius: 12px;
+    max-width: 300px;
+    height: 200px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  
+  .proz_description_services_title {
+    margin-bottom: 16px;
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Yellowtail&display=swap");
+  :root {
+    --navy: #0c0c4a;
+    --dark-navy: #060726;
+    --pink: rgba(213, 84, 213, 1);
+    --pink2: rgba(213, 84, 213, 0.7);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+*::before,
+::after {
+  content: "";
+  position: absolute;
+}
+
+#image {
+    overflow: hidden;
+    width: 80%;
+    height: 55%;
+    background: var(--navy);
+    display: grid;
+  
+    position: relative;
+    border: 8px solid;
+    border-color: darkmagenta magenta;
+    outline: 8px ridge cyan;
+    outline-offset: 4px;
+  }
+
+  #top {
+    height: 67%;
+    background: linear-gradient(transparent 50%, hotpink 160%);
+    box-shadow: 0 15px 50px 1px white;
+    position: relative;
+  }
+
+  #sky {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  
+    background: repeating-linear-gradient(
+        pink 2px,
+        transparent 3px,
+        transparent 30px
+      ),
+      repeating-linear-gradient(90deg, pink 2px, transparent 3px, transparent 40px)
+        10px 0;
+    filter: drop-shadow(0 0 1px magenta) drop-shadow(0 0 3px magenta)
+      drop-shadow(0 0 7px cyan);
+    animation: move 10s linear infinite;
+    opacity: 0.2;
+  }
